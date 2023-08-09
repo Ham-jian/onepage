@@ -1,149 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
-  <title>index</title>
-  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>test</title>
+  <link rel="stylesheet"
+    href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="css/index.css">
 </head>
-<style>
-  body {font-family: 'SUIT', sans-serif;}
-</style>
+
 <body>
-  
-  <div id="wrap">
+
+  <div class="wrap">
     <header>
-      <div class="logo">
-        <a href="#none"><img src="/image/logo.png" alt="TAKLA logo"></a>
-      </div>
       <nav>
-        <ul class="gnb">
-          <li><a href="#shop">shop</a></li>
-          <li><a href="#gift">gift shop</a></li>
-          <li><a href="#inspiration">inspiration</a></li>
-          <li><a href="#about">about us</a></li>
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <ul class="gnb1">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#gift_shop">Gift Shop</a></li>
+          <li><a href="#none">Inspiration</a></li>
+          <li><a href="#none">About us</a></li>
         </ul>
-        <ul class="gnb">
-          <li><a href="#shop">
+        <ul class="gnb2">
+          <li>
             <span class="material-symbols-outlined">search</span>
-          </a></li>
-          <li><a href="#language">
+          </li>
+          <li>
             <span class="material-symbols-outlined">language</span>
-          </a></li>
-          <li><a href="#login">login</a></li>
-          <li><a href="#cart">cart</a></li>
+          </li>
+          <li><a href="#none">Login</a></li>
+          <li><a href="#none">Cart</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="caption">
-        <h1>Days at sea</h1>
-        <span>Fresh poplin sleepwear and soft terry towels accompany long days spent shoreside.</span>
+      <div class="main_items">
+        <div>
+          <img src="image/main-1.jpg" alt="">
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          <img src="image/main-2.jpg" alt="">
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          <img src="image/main-3.jpg" alt="">
+          <p></p>
+          <p></p>
+        </div>
       </div>
     </main>
 
     <section>
       <div id="shop">
         <h2>SHOP</h2>
-        <div class="tab_inner"> <!-- 상품 카테고리 -->
-          <input type="radio" name="tabmenu" id="tab01" checked>
-          <label for="tab01">Sleepwear</label>
-          <input type="radio" name="tabmenu" id="tab02">
-          <label for="tab02">Bedding</label>
-          <input type="radio" name="tabmenu" id="tab03">
-          <label for="tab03">Bath</label>
-          <input type="radio" name="tabmenu" id="tab04">
-          <label for="tab04">Blankets</label>
-          <input type="radio" name="tabmenu" id="tab05">
-          <label for="tab05">Kitchen</label>
-          <input type="radio" name="tabmenu" id="tab06">
-          <label for="tab06">Kids</label>
-
-          <div class="conmenu">
-            <div class="conmenu_con1"> <!-- 상품 상세카테고리 1번(잠옷) -->
-              <input type="radio" name="conmenu" id="sleepwear01" checked>
-              <label for="sleepwear01"><span></span>Poplin sleepwear</label>
-              <input type="radio" name="conmenu" id="sleepwear02">
-              <label for="sleepwear02">Flannel sleepwear</label>
-              <input type="radio" name="conmenu" id="sleepwear03">
-              <label for="sleepwear03">Long-sleeved shirts</label>
-              <input type="radio" name="conmenu" id="sleepwear04">
-              <label for="sleepwear04">Short-sleeved shirts</label><br>
-              <input type="radio" name="conmenu" id="sleepwear05">
-              <label for="sleepwear05">Pants</label>
-              <input type="radio" name="conmenu" id="sleepwear06">
-              <label for="sleepwear06">Shorts</label>
-              <input type="radio" name="conmenu" id="sleepwear07">
-              <label for="sleepwear07">Nightshirts</label>
-              <input type="radio" name="conmenu" id="sleepwear08">
-              <label for="sleepwear08">Dressing gowns</label>
-            </div>
-            <div class="conmenu_con2"> <!-- 상품 상세카테고리 2번(이불) -->
-              <input type="radio" name="conmenu" id="Bedding01">
-              <label for="Bedding01">Percale bedding</label>
-              <input type="radio" name="conmenu" id="Bedding02">
-              <label for="Bedding02">Linen bedding</label>
-              <input type="radio" name="conmenu" id="Bedding03">
-              <label for="Bedding03">Down collection</label>
-              <input type="radio" name="conmenu" id="Bedding04">
-              <label for="Bedding04">Linen bedspread</label>
-            </div>
-            <div class="conmenu_con3"> <!-- 상품 상세카테고리 3번(욕실) -->
-              <input type="radio" name="conmenu" id="Bath01">
-              <label for="Bath01">Towels</label>
-              <input type="radio" name="conmenu" id="Bath02">
-              <label for="Bath02">Bath mats</label>
-              <input type="radio" name="conmenu" id="Bath03">
-              <label for="Bath03">Classic bathrobes</label>
-              <input type="radio" name="conmenu" id="Bath04">
-              <label for="Bath04">Hooded bathrobes</label><br>
-              <input type="radio" name="conmenu" id="Bath05">
-              <label for="Bath05">Beach towels</label>
-              <input type="radio" name="conmenu" id="Bath06">
-              <label for="Bath06">Bucket hats</label>
-              <input type="radio" name="conmenu" id="Bath07">
-              <label for="Bath07">Beach bags</label>
-            </div>
-            <div class="conmenu_con4"> <!-- 상품 상세카테고리 4번(담요) -->
-              <input type="radio" name="conmenu" id="Blankets01">
-              <label for="Blankets01">The Colours of Le Corbusier</label>
-              <input type="radio" name="conmenu" id="Blankets02">
-              <label for="Blankets02">Cashmere blankets</label>
-              <input type="radio" name="conmenu" id="Blankets03">
-              <label for="Blankets03">Mohair blankets</label><br>
-              <input type="radio" name="conmenu" id="Blankets04">
-              <label for="Blankets04">Pure wool blankets</label>
-              <input type="radio" name="conmenu" id="Blankets05">
-              <label for="Blankets05">Gingham blankets</label>
-              <input type="radio" name="conmenu" id="Blankets06">
-              <label for="Blankets06">Fine merino blankets</label>
-            </div>
-            <div class="conmenu_con5"> <!-- 상품 상세카테고리 5번(주방) -->
-              <input type="radio" name="conmenu" id="Kitchen01">
-              <label for="Kitchen01">Tablecloths</label>
-              <input type="radio" name="conmenu" id="Kitchen02">
-              <label for="Kitchen02">Placemats</label>
-              <input type="radio" name="conmenu" id="Kitchen03">
-              <label for="Kitchen03">Napkins</label>
-              <input type="radio" name="conmenu" id="Kitchen04">
-              <label for="Kitchen04">Aprons</label>
-              <input type="radio" name="conmenu" id="Kitchen05">
-              <label for="Kitchen05">Kitchen towels</label>
-              <input type="radio" name="conmenu" id="Kitchen06">
-              <label for="Kitchen06">Glass towels</label>
-            </div>
-            <div class="conmenu_con6"> <!-- 상품 상세카테고리 6번(키즈) -->
-              <input type="radio" name="conmenu" id="Kids01">
-              <label for="Kids01">Kids bathrobes</label>
-              <input type="radio" name="conmenu" id="Kids02">
-              <label for="Kids02">Kids sleepwear sets</label>
-            </div>
+        <div class="shop_inner">
+          <div class="shop_1">
+            <p>
+              <img src="image/product01.png" alt="">
+              <span>All products</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+            <p>
+              <img src="image/product02.png" alt="">
+              <span>Shop women </span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+            <p>
+              <img src="image/product03.png" alt="">
+              <span>Shop men</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+            <p>
+              <img src="image/product04.png" alt="">
+              <span>Bedding</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+            <p>
+              <img src="image/product05.png" alt="">
+              <span>Bath</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
           </div>
+          <div class="shop_2">
+            <p>
+              <img src="image/product06.png" alt="">
+              <span>Blankets</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+            <p>
+              <img src="image/product07.png" alt="">
+              <span>Kitchen</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+            <p>
+              <img src="image/product08.png" alt="">
+              <span>Kids</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+            <p>
+              <img src="image/product09.png" alt="">
+              <span>Exclusives</span>
+              <span class="material-symbols-outlined arrow">arrow_forward</span>
+            </p>
+          </div>
+        </div>
+        <h3>Bestsellers</h3>
+        <div class="tab_inner">
+          <div class="tabmenu"> <!-- 상품 카테고리 -->
+            <input type="radio" name="tabmenu" id="tab01" checked>
+            <label for="tab01">Sleepwear</label>
+            <input type="radio" name="tabmenu" id="tab02">
+            <label for="tab02">Bedding</label>
+            <input type="radio" name="tabmenu" id="tab03">
+            <label for="tab03">Bath</label>
+            <input type="radio" name="tabmenu" id="tab04">
+            <label for="tab04">Blankets</label>
+            <input type="radio" name="tabmenu" id="tab05">
+            <label for="tab05">Kitchen</label>
+            <input type="radio" name="tabmenu" id="tab06">
+            <label for="tab06">Kids</label>
 
-          <div class="container">
-            <div class="contentimg1">
-              <div>
+            <div class="tab img01">
+              <div> <!-- sleepwear -->
                 <p></p>
                 <span>Needle Stripes</span>
                 <span>From 155,000￦</span>
@@ -183,9 +167,249 @@
                 <span>True Navy</span>
                 <span>From 155,000￦</span>
               </div>
+              <div class="btn"><a href="#none">VIEW ALL</a></div>
+            </div>
+            <div class="tab img02">
+              <div> <!-- bedding -->
+                <p></p>
+                <span>Shaded Yellow</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Needle Stripes</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Winter White</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Broken White</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Hopper Stripes</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Mallow Pink</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Anholt Stripes</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Clear Blue Stripes</span>
+                <span>From 180,000￦</span>
+              </div>
+              <div class="btn"><a href="#none">VIEW ALL</a></div>
+            </div>
+            <div class="tab img03">
+              <div> <!-- bath -->
+                <p></p>
+                <span>Racing green Stripes</span>
+                <span>Towels</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Lavender</span>
+                <span>Towels</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Kodiak Brown</span>
+                <span>Towels</span>
+              </div>
+              <div>
+                <p></p>
+                <span>White</span>
+                <span>Towels</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Black Sand</span>
+                <span>Bucket hat</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Nordic Blue</span>
+                <span>Bucket hat</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Paris</span>
+                <span>Classic bathrobe</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Black and Blue</span>
+                <span>Hooded bathrobe</span>
+              </div>
+              <div class="btn"><a href="#none">VIEW ALL</a></div>
+            </div>
+            <div class="tab img04">
+              <div> <!-- blankets -->
+                <p></p>
+                <span>Black Checkerboard</span>
+                <span>Cashmere</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Blue Checkerboard</span>
+                <span>Cashmere</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Gris and Vert Stripes</span>
+                <span>
+                  Le Corbusier</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Deep Blue</span>
+                <span>Fine merino</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Blue and Blanc Stripes</span>
+                <span>Le Corbusier</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Striped</span>
+                <span>Le Corbusier</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Gris</span>
+                <span>Le Corbusier</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Rose</span>
+                <span>Le Corbusier</span>
+              </div>
+              <div class="btn"><a href="#none">VIEW ALL</a></div>
+            </div>
+            <div class="tab img05">
+              <div> <!-- kitchen -->
+                <p></p>
+                <span>Apple Core</span>
+                <span>Tablecloths</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Porcelaine</span>
+                <span>Tablecloths</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Claret</span>
+                <span>Tablecloths</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Black</span>
+                <span>Tablecloths</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Stain</span>
+                <span>Napkins</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Ducks Egg</span>
+                <span>Napkins</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Porcelaine</span>
+                <span>Glass towels</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Porcelaine</span>
+                <span>Aprons</span>
+              </div>
+              <div class="btn"><a href="#none">VIEW ALL</a></div>
+            </div>
+            <div class="tab img06">
+              <div> <!-- kids -->
+                <p></p>
+                <span>Polka Stripes</span>
+                <span>Kids sleepwear set</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Purple Pink</span>
+                <span>Kids sleepwear set</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Boro Stripes</span>
+                <span>Kids sleepwear set</span>
+              </div>
+              <div>
+                <p></p>
+                <span>True Navy</span>
+                <span>Kids sleepwear set</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Forest Green</span>
+                <span>Kids bathrobe</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Lavender</span>
+                <span>Kids bathrobe</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Carmel</span>
+                <span>Kids bathrobe</span>
+              </div>
+              <div>
+                <p></p>
+                <span>Marseille</span>
+                <span>Kids bathrobe</span>
+              </div>
+              <div class="btn"><a href="#none">VIEW ALL</a></div>
             </div>
           </div>
-          
+        </div>
+      </div>
+      <div id="gift_shop">
+        <div>
+          <div class="gift_text">
+            <h2>GIFT SHOP</h2>
+            <p>Welcome to the Tekla Gift Shop – a curated selection to inspire the <br>perfect gift, including thoughtful pieces for them, the home and yourself.</p>
+          </div>
+          <div class="gift_img">
+            <a href="#none">
+              <img src="image/gift-1.png" alt="">
+              <div class="img_text">
+                <span>Tekla Gift Shop</span>
+                <span class="material-symbols-outlined">expand_circle_right</span>
+              </div>
+            </a>
+            <a href="#none">
+              <img src="image/gift-2.png" alt="">
+              <div class="img_text">
+                <span>Popular gifts</span>
+                <span class="material-symbols-outlined">expand_circle_right</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -196,4 +420,5 @@
   </div>
 
 </body>
+
 </html>
