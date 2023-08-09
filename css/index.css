@@ -1,0 +1,237 @@
+@import url(common.css);
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUIT-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUIT-SemiBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {width: 6px;}
+::-webkit-scrollbar-track { background-color: transparent; }
+::-webkit-scrollbar-thumb { 
+  border-radius: 3px;
+  background-color: #BDBDBD; 
+}
+::-webkit-scrollbar-button { display: none; }
+
+
+body{
+  color: #222;
+  font-family: 'SUIT-Medium';
+}
+
+/* Header_______________________________________________ */
+header{
+  width: 100%;
+  height: 50px;
+  position: relative;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+}
+
+nav{
+  width: 100%;
+  height: inherit;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-top: 5px;
+}
+.logo img{
+  width: 90px;
+}
+
+.gnb{
+  display: flex;
+  margin: 0 30px;
+}
+.gnb li{margin: 0 15px;}
+.gnb li a{
+  text-transform: capitalize;
+}
+
+
+/* Main_______________________________________________ */
+main{
+  /* margin-top: 50px; */
+  height: 760px;
+  background: url(../image/main-1.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding-top: 50px;
+}
+
+.caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.caption h1{
+  font-weight: 500;
+  color: #fff;
+}
+
+
+/* Section__________________________________ */
+section{
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+}
+
+#shop h2 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* 탭메뉴 */
+.tabmenu > input {display: none;}
+.tabmenu > input + label {
+  display: inline-block;
+  padding: 30px 160px 15px 0;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tabmenu > input:checked + label { font-weight: 600;}
+
+/* 세부메뉴 */
+.conmenu{
+  height: 86px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.conmenu > div {
+  display: none;
+  position: absolute;
+  padding: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.conmenu > div > input{display: none;}
+.conmenu > div > input + label{
+  /* border: 1px solid #000; */
+  padding: 0 30px 0 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+.conmenu div input + label:before {
+  content: url(../image/radio.png);
+  margin-right: 6px;
+  position: relative;
+  top: 3px;
+}
+.conmenu div input:checked + label:before{
+  content: url(../image/radio-check.png);
+  margin-right: 6px;
+  position: relative;
+  top: 3px;
+}
+
+.tabmenu > input[id="tab01"]:checked ~ .conmenu .conmenu_con1 {display: block;}
+input[id="tab02"]:checked ~ .conmenu .conmenu_con2 {display: block;}
+input[id="tab03"]:checked ~ .conmenu .conmenu_con3 {display: block;}
+input[id="tab04"]:checked ~ .conmenu .conmenu_con4 {display: block;}
+input[id="tab05"]:checked ~ .conmenu .conmenu_con5 {display: block;}
+input[id="tab06"]:checked ~ .conmenu .conmenu_con6 {display: block;}
+
+/* 콘텐츠 */
+/* .conimg > div {
+  display: none;
+} */
+
+/* .conimg{
+  width: 1400px;
+  margin: 35px auto;
+  display: grid;
+}
+.conimg #sleepwear01{
+  border: 1px solid red; 
+}
+.conimg_con1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.conimg li{
+  border: 1px solid #000;
+  display: inline-block;
+  width: 306px;
+  height: 382px;
+}
+.content_img1 div{
+  position: relative;
+}
+.conimg li span:nth-child(1){
+  position: absolute;
+  border: 1px solid #000;
+  top: 100%;
+  left: 0;
+}
+
+.content_img1 li:nth-child(1){
+  background: url(../image/sleep01.png) no-repeat;
+  transition: 0.5s;
+}
+.content_img1 li:nth-child(1):hover{
+  background: url(../image/sleep01-hover.png) no-repeat;
+}
+.content_img:nth-child(2){}
+.content_img:nth-child(3){}
+.content_img:nth-child(4){}
+.content_img:nth-child(5){}
+.content_img:nth-child(6){}
+.content_img:nth-child(7){}
+.content_img:nth-child(8){}
+ */
+.contentimg1{
+  border: 1px solid red;
+  width: 100%;
+  margin: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 16px; */
+}
+
+.contentimg1 div{
+  width: 307px;
+  height: 407px;
+}
+.contentimg1 div > p{
+  width: 307px;
+  height: 382px;
+}
+
+.contentimg1 > div:nth-child(1) p{
+  background: url(../image/sleep01.png);
+}
