@@ -132,14 +132,14 @@ nav>ul>li:hover{
 /* %%%%%%%%%%%% MAIN %%%%%%%%%%%%%%%%%%%%%%%% */
 main {
   width: 100vw;
-  height: 830px;
+  height: 100vh;
   overflow: hidden;
   padding: 60px 0;
 }
 
 .main_items div img {
   width: 100vw;
-  height: 890px;
+  height: 100vh;
   object-fit: cover;
 }
 .main_text{
